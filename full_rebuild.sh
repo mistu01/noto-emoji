@@ -14,7 +14,8 @@ source venv/bin/activate
 pip install -r requirements.txt
 
 rm -rf emojicompat
-git clone git@github.com:googlefonts/emojicompat.git
+EMOJICOMPAT_REPO="${EMOJICOMPAT_REPO:-https://github.com/googlefonts/emojicompat.git}"
+git clone "${EMOJICOMPAT_REPO}"
 pip install emojicompat/
 
 # Validation

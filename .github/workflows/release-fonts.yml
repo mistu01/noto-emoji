@@ -1,0 +1,33 @@
+name: Build Fonts and Release
+
+on:
+  push:
+    tags:
+      - "v*.*.*"
+
+jobs:
+  build_release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y harfbuzz-tools
+      - name: Build fonts
+        run: ./full_rebuild.sh
+      - name: Package fonts
+        run: |
+          zip -j "noto-emoji-fonts-${{ github.ref_name }}.zip" \
+            fonts/*.ttf fonts/LICENSE
+      - name: Create release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: noto-emoji-fonts-${{ github.ref_name }}.zip
+          generate_release_notes: true
