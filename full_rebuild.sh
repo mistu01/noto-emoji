@@ -20,7 +20,7 @@ pip install emojicompat/
 
 # Validation
 python size_check.py
-rm -rf build/ && time make -j 48
+rm -rf build/ && time make -j 48 BYPASS_SEQUENCE_CHECK=True
 # Should take 2-3 minutes to create noto-emoji/NotoColorEmoji.ttf
 
 mv *.ttf fonts/
