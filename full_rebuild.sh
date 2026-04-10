@@ -1,61 +1,25 @@
 #!/usr/bin/env bash
 
-set -e
-set -v
+set -euo pipefail
+set -x
 
-# We have to have hb-subset on PATH
-which hb-subset
+FONT_NAME="NotoColorEmoji.ttf"
+WINDOWS_FONT_NAME="NotoColorEmoji_WindowsCompatible.ttf"
+FONT_OUTPUT_DIR="${FONT_OUTPUT_DIR:-fonts}"
+EMOJI_SRC_DIR="${EMOJI_SRC_DIR:-png/128}"
+BUILD_JOBS="${BUILD_JOBS:-$(getconf _NPROCESSORS_ONLN 2>/dev/null || echo 4)}"
 
-# Build the CBDT font
+python3 size_check.py --png-dir "${EMOJI_SRC_DIR}" --skip-svg
 
-rm -rf venv  # in case you have an old borked venv!
-python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
+rm -rf build/
+rm -f "${FONT_NAME}" "${WINDOWS_FONT_NAME}"
+mkdir -p "${FONT_OUTPUT_DIR}"
+rm -f "${FONT_OUTPUT_DIR}/${FONT_NAME}"
 
-rm -rf emojicompat
-EMOJICOMPAT_REPO="${EMOJICOMPAT_REPO:-https://github.com/googlefonts/emojicompat.git}"
-git clone "${EMOJICOMPAT_REPO}"
-pip install emojicompat/
+time make -j "${BUILD_JOBS}" \
+  BYPASS_SEQUENCE_CHECK=True \
+  EMOJI_SRC_DIR="${EMOJI_SRC_DIR}" \
+  FLAGS= \
+  "${FONT_NAME}"
 
-# Validation
-python size_check.py
-rm -rf build/ && time make -j 48 BYPASS_SEQUENCE_CHECK=True
-# Should take 2-3 minutes to create noto-emoji/NotoColorEmoji.ttf
-
-mv *.ttf fonts/
-
-# make noflags CBDT font
-rm fonts/NotoColorEmoji-noflags.ttf
-python drop_flags.py fonts/NotoColorEmoji.ttf
-
-# Build the COLRv1 font (slow)
-
-python colrv1_generate_configs.py
-git diff colrv1/*.toml
-
-# Compile the fonts
-# Should take ~20 minutes
-(cd colrv1 && rm -rf build/ && time nanoemoji *.toml)
-cp colrv1/build/NotoColorEmoji.ttf fonts/Noto-COLRv1.ttf
-cp colrv1/build/NotoColorEmoji-noflags.ttf fonts/Noto-COLRv1-noflags.ttf
-
-# Post-process them
-python colrv1_postproc.py
-
-# Produce emojicompat variants
-# Add support for new sequences per https://github.com/googlefonts/emojicompat#support-new-unicode-sequences
-
-pushd fonts
-cp NotoColorEmoji.ttf NotoColorEmoji-emojicompat.ttf
-cp Noto-COLRv1.ttf Noto-COLRv1-emojicompat.ttf
-emojicompat --op setup --font NotoColorEmoji-emojicompat.ttf
-emojicompat --op setup --font Noto-COLRv1-emojicompat.ttf
-emojicompat --op check --font NotoColorEmoji-emojicompat.ttf
-emojicompat --op check --font Noto-COLRv1-emojicompat.ttf
-popd
-
-hb-subset --unicodes-file=flags-only-unicodes.txt \
-   --output-file=fonts/NotoColorEmoji-flagsonly.ttf \
-   fonts/NotoColorEmoji.ttf
-python update_flag_name.py
+mv "${FONT_NAME}" "${FONT_OUTPUT_DIR}/${FONT_NAME}"

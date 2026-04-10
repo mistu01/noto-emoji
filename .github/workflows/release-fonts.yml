@@ -1,4 +1,4 @@
-name: Build Fonts and Release
+name: Build PNG-128 Font and Release
 
 on:
   push:
@@ -44,21 +44,21 @@ jobs:
           python -m pip install -r requirements.txt
 
       - name: Validate emoji source assets
-        run: python size_check.py
+        run: python size_check.py --png-dir png/128 --skip-svg
 
-      - name: Build fonts
+      - name: Build font
         run: bash ./full_rebuild.sh
 
       - name: Package release archive
         shell: bash
         run: |
           mkdir -p dist
-          zip -j "dist/noto-emoji-fonts-${GITHUB_SHA::7}.zip" fonts/*.ttf fonts/LICENSE
+          zip -j "dist/noto-color-emoji-png128-${GITHUB_SHA::7}.zip" fonts/NotoColorEmoji.ttf fonts/LICENSE
 
       - name: Upload workflow artifact
         uses: actions/upload-artifact@v4
         with:
-          name: noto-emoji-fonts-${{ github.sha }}
+          name: noto-color-emoji-png128-${{ github.sha }}
           path: dist/*.zip
           if-no-files-found: error
 

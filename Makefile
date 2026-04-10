@@ -14,7 +14,7 @@
 
 EMOJI = NotoColorEmoji
 EMOJI_WINDOWS = NotoColorEmoji_WindowsCompatible
-all: $(EMOJI).ttf $(EMOJI_WINDOWS).ttf
+all: $(EMOJI).ttf
 
 CFLAGS = -std=c99 -Wall -Wextra `pkg-config --cflags --libs cairo`
 LDFLAGS = -lm `pkg-config --libs cairo`
@@ -102,14 +102,18 @@ endif
 
 ALL_FLAGS = $(basename $(notdir $(wildcard $(FLAGS_SRC_DIR)/*.png)))
 
-FLAGS = $(SELECTED_FLAGS)
+FLAGS ?=
 
 FLAG_NAMES = $(FLAGS:%=%.png)
 FLAG_FILES = $(addprefix $(FLAGS_DIR)/, $(FLAG_NAMES))
 RESIZED_FLAG_FILES = $(addprefix $(RESIZED_FLAGS_DIR)/, $(FLAG_NAMES))
 
+ifneq ($(strip $(FLAGS)),)
 ifndef MISSING_PY_TOOLS
 FLAG_GLYPH_NAMES = $(shell $(PYTHON) flag_glyph_name.py $(FLAGS))
+else
+FLAG_GLYPH_NAMES =
+endif
 else
 FLAG_GLYPH_NAMES =
 endif

@@ -46,6 +46,6 @@ The build rescales those source files into the font's `128x128` emoji body box
 before compositing.
 
 ```bash
-# Build CBDT, COLR, flags-only, and emojicompat fonts
+# Build only the CBDT font from png/128 Apple PNG assets
 $ ./full_rebuild.sh
 ```

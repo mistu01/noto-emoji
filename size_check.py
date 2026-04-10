@@ -1,4 +1,5 @@
 """Sanity check image sizes and svg viewboxes."""
+import argparse
 from PIL import Image
 from pathlib import Path
 from lxml import etree
@@ -47,20 +48,47 @@ def _check_svg(base_dir, svg_dir):
 			num_good += 1
 	return num_bad, num_good
 
+def _parse_args():
+	parser = argparse.ArgumentParser()
+	parser.add_argument(
+		"--png-dir",
+		action="append",
+		dest="png_dirs",
+		help="Specific PNG size directories to validate, relative to the repo root.",
+	)
+	parser.add_argument(
+		"--skip-svg",
+		action="store_true",
+		help="Skip validating SVG viewBoxes.",
+	)
+	return parser.parse_args()
+
+
 def main():
+	args = _parse_args()
 	base_dir = Path(__file__).parent
 	image_dir = base_dir / "png"
 	svg_dir = base_dir / "svg"
 
 	assert image_dir.is_dir()
-	assert svg_dir.is_dir()
+	if not args.skip_svg:
+		assert svg_dir.is_dir()
 
-	for size_dir in image_dir.iterdir():
+	if args.png_dirs:
+		size_dirs = [base_dir / png_dir for png_dir in args.png_dirs]
+	else:
+		size_dirs = list(image_dir.iterdir())
+
+	num_bad_total = 0
+	for size_dir in size_dirs:
 		num_bad, num_good = _check_image(base_dir, size_dir)
 		print(f"{num_bad}/{num_bad+num_good} issues with {size_dir}")
-	num_bad, num_good = _check_svg(base_dir, svg_dir)
-	print(f"{num_bad}/{num_bad+num_good} issues with {svg_dir}")
-	sys.exit(num_bad)
+		num_bad_total += num_bad
+	if not args.skip_svg:
+		num_bad, num_good = _check_svg(base_dir, svg_dir)
+		print(f"{num_bad}/{num_bad+num_good} issues with {svg_dir}")
+		num_bad_total += num_bad
+	sys.exit(num_bad_total)
 
 if __name__ == "__main__":
    main()

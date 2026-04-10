@@ -24,7 +24,7 @@ jobs:
           python -m pip install -r requirements.txt
 
       - name: Validate emoji source assets
-        run: python size_check.py
+        run: python size_check.py --png-dir png/128 --skip-svg
 
       - name: Run tests
         run: pytest
