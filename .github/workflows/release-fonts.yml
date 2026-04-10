@@ -49,17 +49,20 @@ jobs:
       - name: Build font
         run: bash ./full_rebuild.sh
 
-      - name: Package release archive
+      - name: Inspect built font
         shell: bash
         run: |
-          mkdir -p dist
-          zip -j "dist/noto-color-emoji-png128-${GITHUB_SHA::7}.zip" fonts/NotoColorEmoji.ttf fonts/LICENSE
+          du -sh build/emoji build/quantized_pngs build/compressed_pngs
+          ls -lh fonts/NotoColorEmoji.ttf
+          file fonts/NotoColorEmoji.ttf
 
       - name: Upload workflow artifact
         uses: actions/upload-artifact@v4
         with:
           name: noto-color-emoji-png128-${{ github.sha }}
-          path: dist/*.zip
+          path: |
+            fonts/NotoColorEmoji.ttf
+            fonts/LICENSE
           if-no-files-found: error
 
       - name: Compute release metadata
@@ -81,6 +84,8 @@ jobs:
         with:
           tag_name: ${{ steps.meta.outputs.tag }}
           name: ${{ steps.meta.outputs.name }}
-          files: dist/*.zip
+          files: |
+            fonts/NotoColorEmoji.ttf
+            fonts/LICENSE
           prerelease: ${{ steps.meta.outputs.prerelease }}
           generate_release_notes: true

@@ -37,6 +37,7 @@ ADD_GLYPHS = add_glyphs.py
 ADD_GLYPHS_FLAGS = -a emoji_aliases.txt
 PUA_ADDER = map_pua_emoji.py
 VS_ADDER = add_vs_cmap.py # from nototools
+PREPARE_PNG = prepare_png.py
 
 EMOJI_SRC_DIR ?= png/128
 FLAGS_SRC_DIR := third_party/region-flags/png
@@ -163,13 +164,13 @@ waveflag: waveflag.c
 # imagemagick packaged with ubuntu trusty (6.7.7-10) by using -composite.
 
 $(EMOJI_DIR)/%.png: $(EMOJI_SRC_DIR)/%.png | $(EMOJI_DIR)
-	@convert "$<" -resize $(EMOJI_MAX_DIMENSIONS) $(IMOPS) -composite "PNG32:$@"
+	@$(PYTHON) $(PREPARE_PNG) "$<" "$@" --fit 128 128 --canvas 136 128
 
 $(FLAGS_DIR)/%.png: $(FLAGS_SRC_DIR)/%.png ./waveflag | $(FLAGS_DIR)
 	@./waveflag $(FLAGS_DIR)/ "$<"
 
 $(RESIZED_FLAGS_DIR)/%.png: $(FLAGS_DIR)/%.png | $(RESIZED_FLAGS_DIR)
-	@convert "$<" -resize $(FLAG_MAX_DIMENSIONS) $(IMOPS) -composite "PNG32:$@"
+	@$(PYTHON) $(PREPARE_PNG) "$<" "$@" --fit 136 128 --canvas 136 128
 
 flag-symlinks: $(RESIZED_FLAG_FILES) | $(RENAMED_FLAGS_DIR)
 	@$(subst ^, ,                                  \
