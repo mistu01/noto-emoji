@@ -4,10 +4,18 @@ from pathlib import Path
 from lxml import etree
 import sys
 
+PNG_SIZE_OVERRIDES = {
+    # Apple source artwork in png/128 is authored at 160x160 and scaled during
+    # the build to fit the font's 128px body box.
+    "128": (160, 160),
+}
+
 
 def _check_image(base_dir, image_dir):
 	assert image_dir.is_dir()
-	expected_size = (int(image_dir.name), int(image_dir.name))
+	expected_size = PNG_SIZE_OVERRIDES.get(
+		image_dir.name, (int(image_dir.name), int(image_dir.name))
+	)
 
 	num_bad = 0
 	num_good = 0

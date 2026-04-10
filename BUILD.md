@@ -41,6 +41,10 @@ Edit `NotoColorEmoji.tmpl.ttx.tmpl`
 
 ## Rebuild the fonts
 
+Apple PNG artwork placed in `png/128` is expected to be authored at `160x160`.
+The build rescales those source files into the font's `128x128` emoji body box
+before compositing.
+
 ```bash
 # Build CBDT, COLR, flags-only, and emojicompat fonts
 $ ./full_rebuild.sh
