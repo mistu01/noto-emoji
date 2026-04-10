@@ -89,10 +89,6 @@ ifeq (,$(shell which $(ZOPFLIPNG)))
   endif
 endif
 
-ifndef VIRTUAL_ENV
-  MISSING_VENV = fail
-endif
-
 ifeq (, $(shell which $(VS_ADDER)))
   MISSING_PY_TOOLS = fail
 endif
@@ -144,9 +140,6 @@ compressed: $(ALL_COMPRESSED_FILES)
 check_tools:
 ifdef MISSING_ZOPFLI
 	$(error "Missing $(ZOPFLIPNG). Try 'brew install zopfli' (Mac) or 'sudo apt-get install zopfli' (linux)")
-endif
-ifdef MISSING_VENV
-		$(error "Please start your virtual environment, and run: "'pip install -r requirements.txt'")
 endif
 ifdef MISSING_PY_TOOLS
 		$(error "Missing tools; run: "'pip install -r requirements.txt' in your virtual environment")
