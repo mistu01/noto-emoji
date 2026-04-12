@@ -28,6 +28,15 @@ from nototools import font_data
 import add_emoji_gsub
 
 
+def _iter_ligature_subtables(font):
+    for lookup in font['GSUB'].table.LookupList.Lookup:
+        for subtable in lookup.SubTable:
+            if hasattr(subtable, 'ExtSubTable'):
+                subtable = subtable.ExtSubTable
+            if hasattr(subtable, 'ligatures'):
+                yield subtable
+
+
 def get_glyph_name_from_gsub(char_seq, font):
     """Find the glyph name for ligature of a given character sequence from GSUB.
     """
@@ -39,8 +48,8 @@ def get_glyph_name_from_gsub(char_seq, font):
     except KeyError:
         return None
 
-    for lookup in font['GSUB'].table.LookupList.Lookup:
-        ligatures = lookup.SubTable[0].ligatures
+    for subtable in _iter_ligature_subtables(font):
+        ligatures = subtable.ligatures
         try:
             for ligature in ligatures[first_glyph]:
                 if ligature.Component == rest_of_glyphs:
