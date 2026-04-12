@@ -32,13 +32,23 @@ try:
 except NameError:
 	unichr = chr  # py3
 
+def _iter_ligature_subtables(font):
+	for lookup in font['GSUB'].table.LookupList.Lookup:
+		for subtable in lookup.SubTable:
+			if hasattr(subtable, 'ExtSubTable'):
+				subtable = subtable.ExtSubTable
+			if hasattr(subtable, 'ligatures'):
+				yield subtable
+
+
 def get_glyph_name_from_gsub (string, font, cmap_dict):
-	ligatures = font['GSUB'].table.LookupList.Lookup[0].SubTable[0].ligatures
 	first_glyph = cmap_dict[ord (string[0])]
 	rest_of_glyphs = [cmap_dict[ord (ch)] for ch in string[1:]]
-	for ligature in ligatures[first_glyph]:
-		if ligature.Component == rest_of_glyphs:
-			return ligature.LigGlyph
+	for subtable in _iter_ligature_subtables(font):
+		ligatures = subtable.ligatures
+		for ligature in ligatures.get(first_glyph, []):
+			if ligature.Component == rest_of_glyphs:
+				return ligature.LigGlyph
 
 
 def div (a, b):
