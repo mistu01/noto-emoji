@@ -16,6 +16,35 @@ NANOEMOJI_BUILD_DIR="${NANOEMOJI_BUILD_DIR:-build/colrv1}"
 RUN_COLRV1_POSTPROC="${RUN_COLRV1_POSTPROC:-1}"
 BUILD_COLRV1_NOFLAGS="${BUILD_COLRV1_NOFLAGS:-0}"
 
+colrv1_output_path() {
+  local name="$1"
+
+  if [[ -f "${name}" ]]; then
+    printf '%s\n' "${name}"
+    return 0
+  fi
+
+  if [[ -f "${NANOEMOJI_BUILD_DIR}/${name}" ]]; then
+    printf '%s\n' "${NANOEMOJI_BUILD_DIR}/${name}"
+    return 0
+  fi
+
+  return 1
+}
+
+move_colrv1_output() {
+  local name="$1"
+  local destination="$2"
+  local source
+
+  source="$(colrv1_output_path "${name}")" || {
+    echo "Missing requested COLRv1 output: ${name}" >&2
+    return 1
+  }
+
+  mv "${source}" "${destination}"
+}
+
 python3 size_check.py --png-dir "${EMOJI_SRC_DIR}" --skip-svg
 
 mkdir -p "${FONT_OUTPUT_DIR}"
@@ -55,7 +84,7 @@ set -e
 if [[ "${nanoemoji_status}" -ne 0 ]]; then
   missing_output=0
   for output in "${expected_outputs[@]}"; do
-    if [[ ! -f "${output}" ]]; then
+    if ! colrv1_output_path "${output}" > /dev/null; then
       echo "nanoemoji exited ${nanoemoji_status} and did not produce ${output}." >&2
       missing_output=1
     fi
@@ -66,10 +95,10 @@ if [[ "${nanoemoji_status}" -ne 0 ]]; then
   echo "nanoemoji exited ${nanoemoji_status}, but all requested COLRv1 fonts were written; continuing to verify outputs." >&2
 fi
 
-mv "${COLR_INPUT_NAME}" "${FONT_OUTPUT_DIR}/${COLR_FONT_NAME}"
+move_colrv1_output "${COLR_INPUT_NAME}" "${FONT_OUTPUT_DIR}/${COLR_FONT_NAME}"
 
-if [[ -f "${COLR_NOFLAGS_INPUT_NAME}" ]]; then
-  mv "${COLR_NOFLAGS_INPUT_NAME}" "${FONT_OUTPUT_DIR}/${COLR_NOFLAGS_FONT_NAME}"
+if colrv1_output_path "${COLR_NOFLAGS_INPUT_NAME}" > /dev/null; then
+  move_colrv1_output "${COLR_NOFLAGS_INPUT_NAME}" "${FONT_OUTPUT_DIR}/${COLR_NOFLAGS_FONT_NAME}"
 fi
 
 if [[ "${RUN_COLRV1_POSTPROC}" == "1" ]]; then
