@@ -22,10 +22,10 @@ from colrv1_add_soft_light_to_flags import add_soft_light_to_flags
 
 
 _CBDT_FILE = Path("fonts/NotoColorEmoji.ttf")
-_COLR_FILES = {
-    Path("fonts/Noto-COLRv1-noflags.ttf"),
+_COLR_FILES = (
     Path("fonts/Noto-COLRv1.ttf"),
-}
+    Path("fonts/Noto-COLRv1-noflags.ttf"),
+)
 
 
 def _is_colrv1(font):
@@ -317,6 +317,9 @@ def main(_):
     cbdt_font = _font(_CBDT_FILE, _is_cbdt, " must be a CBDT font")
 
     for colr_file in _COLR_FILES:
+        if not colr_file.is_file():
+            print(f"Skipping missing optional COLRv1 font: {colr_file}")
+            continue
         colr_font = _font(colr_file, _is_colrv1, " must be a COLRv1 font")
 
         print(f"Updating {colr_file} from {_CBDT_FILE}")

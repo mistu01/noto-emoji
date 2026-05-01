@@ -4,10 +4,15 @@ on:
   workflow_dispatch:
     inputs:
       emoji_src_dir:
-        description: "PNG source directory used to build the CBDT metadata font"
+        description: "CBDT metadata PNG source directory; COLRv1 artwork comes from svg/"
         required: true
         default: "png/128"
         type: string
+      build_noflags:
+        description: "Also build the optional COLRv1 noflags font"
+        required: true
+        default: false
+        type: boolean
       release_tag:
         description: "Optional release tag; defaults to colrv1-auto-<run>-<attempt>"
         required: false
@@ -60,18 +65,20 @@ jobs:
         env:
           EMOJI_SRC_DIR: ${{ inputs.emoji_src_dir }}
           BUILD_CBDT_DEPENDENCY: "1"
+          BUILD_COLRV1_NOFLAGS: ${{ inputs.build_noflags }}
         run: bash ./build_colrv1.sh
 
       - name: Inspect built fonts
         shell: bash
         run: |
           du -sh build/colrv1 || true
-          ls -lh fonts/Noto-COLRv1.ttf fonts/Noto-COLRv1-noflags.ttf
+          ls -lh fonts/Noto-COLRv1*.ttf
           python - <<'PY'
+          from pathlib import Path
           from fontTools.ttLib import TTFont
-          for path in ("fonts/Noto-COLRv1.ttf", "fonts/Noto-COLRv1-noflags.ttf"):
+          for path in sorted(Path("fonts").glob("Noto-COLRv1*.ttf")):
               font = TTFont(path)
-              assert "COLR" in font and font["COLR"].version == 1, path
+              assert "COLR" in font and font["COLR"].version == 1, str(path)
               print(path, "COLRv1", f"fontRevision={font['head'].fontRevision:.3f}")
           PY
 
@@ -80,8 +87,7 @@ jobs:
         with:
           name: noto-color-emoji-colrv1-${{ github.run_id }}-${{ github.run_attempt }}
           path: |
-            fonts/Noto-COLRv1.ttf
-            fonts/Noto-COLRv1-noflags.ttf
+            fonts/Noto-COLRv1*.ttf
             fonts/LICENSE
           if-no-files-found: error
 
@@ -110,8 +116,7 @@ jobs:
           tag_name: ${{ steps.meta.outputs.tag }}
           name: ${{ steps.meta.outputs.name }}
           files: |
-            fonts/Noto-COLRv1.ttf
-            fonts/Noto-COLRv1-noflags.ttf
+            fonts/Noto-COLRv1*.ttf
             fonts/LICENSE
           prerelease: ${{ steps.meta.outputs.prerelease }}
           generate_release_notes: true

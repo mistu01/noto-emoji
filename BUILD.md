@@ -52,6 +52,9 @@ $ ./full_rebuild.sh
 # Build COLRv1 fonts from svg/ assets. This also builds the CBDT font first
 # because COLRv1 post-processing copies metadata from fonts/NotoColorEmoji.ttf.
 $ ./build_colrv1.sh
+
+# Also build the optional noflags COLRv1 font.
+$ BUILD_COLRV1_NOFLAGS=1 ./build_colrv1.sh
 ```
 
 ## GitHub release workflows
@@ -59,5 +62,7 @@ $ ./build_colrv1.sh
 Font release workflows are manual-only:
 
 * `Build PNG-128 Font and Release` builds `fonts/NotoColorEmoji.ttf`.
-* `Build COLRv1 Font and Release` builds `fonts/Noto-COLRv1.ttf` and
-  `fonts/Noto-COLRv1-noflags.ttf`.
+* `Build COLRv1 Font and Release` builds `fonts/Noto-COLRv1.ttf` from `svg/`.
+  The workflow still asks for `png/128` because it first builds the CBDT font
+  used as a metadata source. The noflags COLRv1 font is optional in the manual
+  workflow dispatch form.
