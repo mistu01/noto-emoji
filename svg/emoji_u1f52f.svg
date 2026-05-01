@@ -1,16 +1,1 @@
-<svg id="emoji" viewBox="0 0 72 72" version="1.1" xmlns="http://www.w3.org/2000/svg">
-  <g id="line-supplement">
-    <path d="m38.5 36a2.5 2.5 0 1 1-2.499-2.5 2.499 2.499 0 0 1 2.499 2.5z"/>
-    <path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.696" d="m36 18.67 14.97 25.96-14.97-1.113e-6h-14.97l7.486-12.98z" paint-order="stroke fill markers"/>
-    <path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.696" d="m21.01 27.39 29.97 0.01892-14.97 25.93-7.5-12.97z" paint-order="stroke fill markers"/>
-  </g>
-  <g id="color">
-    <rect x="12" y="12.08" width="48" height="47.83" fill="#8967aa"/>
-    <path fill="#fff" d="m38.5 36a2.5 2.5 0 1 1-2.499-2.5 2.499 2.499 0 0 1 2.499 2.5z"/>
-    <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.696" d="m36 18.67 14.97 25.96-14.97-1e-6h-14.97l7.486-12.98z" paint-order="stroke fill markers"/>
-    <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.696" d="m21.01 27.39 29.97 0.01892-14.97 25.93-7.5-12.97z" paint-order="stroke fill markers"/>
-  </g>
-  <g id="line">
-    <rect x="12" y="12" width="48" height="48" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36"><path fill="#9266CC" d="M36 32c0 2.209-1.791 4-4 4H4c-2.209 0-4-1.791-4-4V4c0-2.209 1.791-4 4-4h28c2.209 0 4 1.791 4 4v28z"/><path fill="#F5F8FA" d="M18 34.156c-1.011 0-1.928-.588-2.516-1.614L3.811 12.168c-.602-1.05-.66-2.149-.159-3.014.473-.816 1.363-1.284 2.441-1.284h24.816c1.09 0 1.978.473 2.438 1.296.485.869.396 1.961-.242 2.997l-12.63 20.468c-.597.969-1.499 1.525-2.475 1.525zM6.524 10.87l11.485 20.044 12.365-20.038-23.85-.006z"/><path fill="#F5F8FA" d="M30.909 27.5H6.093c-1.079 0-1.968-.469-2.441-1.285-.501-.865-.443-1.963.159-3.013L15.484 2.829c.589-1.027 1.505-1.615 2.516-1.615.976 0 1.878.557 2.476 1.527l12.63 20.466c.639 1.035.728 2.127.242 2.996-.46.824-1.349 1.297-2.439 1.297zM6.528 24.493l23.85.007L18.009 4.457 6.528 24.493z"/><circle fill="#F5F8FA" cx="18" cy="18" r="4"/></svg>

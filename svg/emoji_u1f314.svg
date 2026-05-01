@@ -1,13 +1,1 @@
-<svg id="emoji" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
-  <g id="line-supplement">
-    <path fill="#000000" d="M17,37A28.001,28.001,0,0,1,43.5465,9.0374,27.9995,27.9995,0,1,0,36,64q.7312,0,1.4535-.0374A28.0059,28.0059,0,0,1,17,37Z"/>
-  </g>
-  <g id="color">
-    <circle cx="36" cy="36" r="28" fill="#fcea2b" stroke="#3f3f3f" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-    <path fill="#3f3f3f" d="M17,37A28.001,28.001,0,0,1,43.5465,9.0374,27.9995,27.9995,0,1,0,36,64q.7312,0,1.4535-.0374A28.0059,28.0059,0,0,1,17,37Z"/>
-  </g>
-  <g id="line">
-    <circle cx="36" cy="36" r="28" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-    <path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17,37A28.001,28.001,0,0,1,43.5465,9.0374,27.9995,27.9995,0,1,0,36,64q.7312,0,1.4535-.0374A28.0059,28.0059,0,0,1,17,37Z"/>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36"><path fill="#FFD983" d="M36 18c0 9.941-8.059 18-18 18-.294 0-.58-.029-.87-.043C11.239 33.393 7 26.332 7 18 7 9.669 11.239 2.607 17.13.044 17.42.03 17.706 0 18 0c9.941 0 18 8.059 18 18z"/><path fill="#66757F" d="M7 18C7 9.669 11.239 2.607 17.13.044 7.596.501 0 8.353 0 18c0 9.646 7.594 17.498 17.128 17.956C11.238 33.391 7 26.331 7 18z"/><circle fill="#FFCC4D" cx="25.5" cy="8.5" r="3.5"/><circle fill="#FFCC4D" cx="16" cy="16" r="3"/><circle fill="#FFCC4D" cx="14.5" cy="27.5" r="3.5"/><circle fill="#FFCC4D" cx="15" cy="6" r="2"/><circle fill="#FFCC4D" cx="33" cy="18" r="1"/><circle fill="#5B6876" cx="6" cy="9" r="1"/><circle fill="#FFCC4D" cx="21" cy="31" r="1"/><circle fill="#5B6876" cx="4" cy="19" r="2"/><circle fill="#FFCC4D" cx="26" cy="23" r="2"/></svg>
