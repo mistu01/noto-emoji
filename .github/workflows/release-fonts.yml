@@ -1,15 +1,25 @@
 name: Build PNG-128 Font and Release
 
 on:
-  push:
-    branches:
-      - main
-    tags:
-      - "v*.*.*"
   workflow_dispatch:
+    inputs:
+      emoji_src_dir:
+        description: "PNG source directory to build from"
+        required: true
+        default: "png/128"
+        type: string
+      release_tag:
+        description: "Optional release tag; defaults to png128-auto-<run>-<attempt>"
+        required: false
+        type: string
+      prerelease:
+        description: "Mark the GitHub release as a prerelease"
+        required: true
+        default: true
+        type: boolean
 
 concurrency:
-  group: release-fonts-${{ github.ref }}
+  group: release-png128-fonts-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
@@ -44,9 +54,11 @@ jobs:
           python -m pip install -r requirements.txt
 
       - name: Validate emoji source assets
-        run: python size_check.py --png-dir png/128 --skip-svg
+        run: python size_check.py --png-dir "${{ inputs.emoji_src_dir }}" --skip-svg
 
       - name: Build font
+        env:
+          EMOJI_SRC_DIR: ${{ inputs.emoji_src_dir }}
         run: bash ./full_rebuild.sh
 
       - name: Inspect built font
@@ -59,7 +71,7 @@ jobs:
       - name: Upload workflow artifact
         uses: actions/upload-artifact@v4
         with:
-          name: noto-color-emoji-png128-${{ github.sha }}
+          name: noto-color-emoji-png128-${{ github.run_id }}-${{ github.run_attempt }}
           path: |
             fonts/NotoColorEmoji.ttf
             fonts/LICENSE
@@ -68,16 +80,21 @@ jobs:
       - name: Compute release metadata
         id: meta
         shell: bash
+        env:
+          RELEASE_TAG: ${{ inputs.release_tag }}
+          PRERELEASE: ${{ inputs.prerelease }}
         run: |
-          if [[ "${GITHUB_REF_TYPE}" == "tag" ]]; then
+          if [[ -n "${RELEASE_TAG}" ]]; then
+            echo "tag=${RELEASE_TAG}" >> "${GITHUB_OUTPUT}"
+            echo "name=PNG-128 font ${RELEASE_TAG}" >> "${GITHUB_OUTPUT}"
+          elif [[ "${GITHUB_REF_TYPE}" == "tag" ]]; then
             echo "tag=${GITHUB_REF_NAME}" >> "${GITHUB_OUTPUT}"
-            echo "name=Release ${GITHUB_REF_NAME}" >> "${GITHUB_OUTPUT}"
-            echo "prerelease=false" >> "${GITHUB_OUTPUT}"
+            echo "name=PNG-128 font ${GITHUB_REF_NAME}" >> "${GITHUB_OUTPUT}"
           else
-            echo "tag=auto-${GITHUB_RUN_NUMBER}" >> "${GITHUB_OUTPUT}"
-            echo "name=Auto build ${GITHUB_RUN_NUMBER}" >> "${GITHUB_OUTPUT}"
-            echo "prerelease=true" >> "${GITHUB_OUTPUT}"
+            echo "tag=png128-auto-${GITHUB_RUN_NUMBER}-${GITHUB_RUN_ATTEMPT}" >> "${GITHUB_OUTPUT}"
+            echo "name=PNG-128 font auto build ${GITHUB_RUN_NUMBER}.${GITHUB_RUN_ATTEMPT}" >> "${GITHUB_OUTPUT}"
           fi
+          echo "prerelease=${PRERELEASE}" >> "${GITHUB_OUTPUT}"
 
       - name: Create GitHub release
         uses: softprops/action-gh-release@v2

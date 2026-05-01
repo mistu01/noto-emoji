@@ -1,28 +1,24 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 26.3.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 128 128" style="enable-background:new 0 0 128 128;" xml:space="preserve">
-<g>
-	<circle style="fill:#CC3333;" cx="64" cy="64" r="60"/>
-	<circle style="fill:#F44336;" cx="60.1" cy="63.1" r="56.1"/>
-</g>
-<g>
-	<path style="opacity:0.65;fill:#FF8A80;enable-background:new    ;" d="M24.4,29.7c4.5-7.1,14.1-13,24.1-14.8
-		c2.5-0.4,5-0.6,7.1,0.2c1.6,0.6,2.9,2.1,2,3.8c-0.7,1.4-2.6,2-4.1,2.5c-9.4,3.1-17.5,9.2-23,17.4c-2,3-5,11.3-8.7,9.2
-		C17.9,45.7,18.6,38.5,24.4,29.7z"/>
-	<path style="fill:#FAFAFA;" d="M35.6,104.5c-2.6,0-4-1.3-4-4v-28c-2.7,2.7-5.1,4.9-7.3,6.6c-1.4,1-2.5,1.4-3.4,1.3s-1.8-1-2.5-2.4
-		c-0.6-1.3-0.9-2.4-0.6-3.3c0.2-0.9,1-1.8,2.2-2.6c4.2-3,8.2-6.7,11.9-11c3.8-4.4,6.9-9,9.2-13.7H30.4h-7c-2.5,0-3.7-1.2-3.7-3.7
-		s1.2-3.7,3.7-3.7h8.3V28.7c0-2.6,1.3-4,4-4c2.6,0,4,1.3,4,4v11.2h6.1c1.7,0,2.9,0.5,3.5,1.6s0.7,2.6,0.1,4.5
-		c-1.8,4.8-4.4,9.7-7.8,14.9c2.8,2.5,6.3,5.7,10.5,9.8c0.9,0.8,1.3,1.6,1.1,2.3c-0.1,0.5-0.5,1.3-1.4,2.5c-1.1,1.4-2,2.1-2.8,2.2
-		c-1,0-1.9-0.7-3-1.9c-1.8-2.2-4-4.6-6.4-7.2v32C39.6,103.2,38.2,104.5,35.6,104.5z M48.5,102.1c-2-2.5-1.3-4.8,2.1-6.9
-		c4-3.1,6.9-7.4,8.5-12.8c1.3-4.2,2.1-10.2,2.5-18.1h-4.3c-1.1,0-2-0.3-2.7-1s-1-1.6-1-2.7V35.1c0-1.7,0.5-3.1,1.6-4.1
-		c1.1-1.1,2.4-1.6,4.1-1.6h14.9h15c1.7,0,3.1,0.5,4.1,1.6c1.1,1.1,1.6,2.4,1.6,4.1v23.5c0,1.7-0.5,3.1-1.6,4.1
-		c-1.1,1.1-2.4,1.6-4.1,1.6h-4.8V94c0,1.3,0.1,2.2,0.3,2.6c0.2,0.4,0.7,0.5,1.5,0.5h4.6c0.5,0,0.9-0.2,1.2-0.7
-		c0.3-0.4,0.5-1.3,0.6-2.6c0.1-2.2,0.5-4,1.1-5.4c0.9-1.8,2-2.3,3.4-1.7c0.9,0.4,1.5,1.4,1.8,3.1c0.3,1.3,0.4,2.6,0.3,4
-		c-0.4,3.8-1.2,6.4-2.3,7.9c-1.1,1.4-2.9,2.2-5.4,2.2h-6.8c-3.3,0-5.6-0.7-6.7-2.1c-1.1-1.3-1.6-3.9-1.6-7.7V64.3h-7
-		C68.9,74,67.7,81.5,66,86.7c-2.3,6.7-6.1,11.9-11.5,15.8C52,104,50,103.9,48.5,102.1z M63.3,56.9h21.5c1.4,0,2.1-0.7,2.1-2.1V38.9
-		c0-1.4-0.7-2.1-2.1-2.1H74.1H63.3c-1.4,0-2.1,0.7-2.1,2.1v15.9C61.2,56.2,61.9,56.9,63.3,56.9z"/>
-	<path style="opacity:0.3;fill:#FF8A80;enable-background:new    ;" d="M24.4,29.7c4.5-7.1,14.1-13,24.1-14.8c2.5-0.4,5-0.6,7.1,0.2
-		c1.6,0.6,2.9,2.1,2,3.8c-0.7,1.4-2.6,2-4.1,2.5c-9.4,3.1-17.5,9.2-23,17.4c-2,3-5,11.3-8.7,9.2C17.9,45.7,18.6,38.5,24.4,29.7z"/>
-</g>
+<svg id="emoji" viewBox="0 0 72 72" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <g id="line-supplement" transform="matrix(.3004 0 0 .3004 -521.6 -12.27)" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1.5" stroke-width="7.98" clip-rule="evenodd">
+    <path transform="matrix(1.043 0 0 1.043 -77.1 -5.928)" fill="none" d="m1861 157.3s3.157 40.12-23.02 52.17"/>
+    <path transform="matrix(1.043 0 0 1.043 -77.1 -5.928)" fill="none" d="m1880 155.8s0.1427 38.03 0.1867 49.66c0.01 1.848 1.507 3.341 3.354 3.341h12.83c1.746 0 4.438-1.11 5.663-2.828 2.756-3.866 2.391-9.376 1.859-14.12"/>
+    <path transform="matrix(1.043 0 0 1.043 -77.1 -5.928)" fill="none" d="m1821 209.5 0.1493-52.17"/>
+    <path transform="matrix(1.043 0 0 1.043 -77.1 -5.928)" fill-opacity="0" d="m1897 120.1v32.03c0 1.684-1.367 3.052-3.052 3.052h-43.3c-1.684 0-3.052-1.367-3.052-3.052v-32.03c0-1.683 1.368-3.051 3.052-3.051h43.3c1.684 0 3.052 1.368 3.052 3.051z"/>
+    <path transform="matrix(1.043 0 0 1.043 -77.1 -5.928)" fill="none" d="m1822 155.8 18.46 17.21"/>
+    <path transform="matrix(1.043 0 0 1.043 -77.1 -5.928)" fill="none" d="m1802 130.6 35.51 0.078s-9.782 25.5-38.95 45.92"/>
+    <path transform="matrix(1.043 0 0 1.043 -77.1 -5.928)" fill="none" d="m1821 109.1 0.07 20.06"/>
+  </g>
+  <g id="color" transform="matrix(.3004 0 0 .3004 -521.6 -12.27)">
+    <circle cx="36" cy="36.04" r="25.76" transform="matrix(3.619,0,0,3.619,1726,30.29)" fill="#d22f27" stroke-width="0.92"/>
+    <path transform="matrix(1.043 0 0 1.043 -77.1 -5.928)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="7.979" d="m1861 157.3s3.157 40.12-23.02 52.17"/>
+    <path transform="matrix(1.043 0 0 1.043 -77.1 -5.928)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="7.979" d="m1880 155.8s0.1427 38.03 0.1867 49.66c0.01 1.848 1.507 3.341 3.354 3.341h12.83c1.746 0 4.438-1.11 5.663-2.828 2.756-3.866 2.391-9.376 1.859-14.12"/>
+    <path transform="matrix(1.043 0 0 1.043 -77.1 -5.928)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="7.979" d="m1821 209.5 0.1493-52.17"/>
+    <path transform="matrix(1.043 0 0 1.043 -77.1 -5.928)" fill-opacity="0" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="7.979" d="m1897 120.1v32.03c0 1.684-1.367 3.052-3.052 3.052h-43.3c-1.684 0-3.052-1.367-3.052-3.052v-32.03c0-1.683 1.368-3.051 3.052-3.051h43.3c1.684 0 3.052 1.368 3.052 3.051z"/>
+    <path transform="matrix(1.043 0 0 1.043 -77.1 -5.928)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="7.979" d="m1822 155.8 18.46 17.21"/>
+    <path transform="matrix(1.043 0 0 1.043 -77.1 -5.928)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="7.979" d="m1802 130.6 35.51 0.078s-9.782 25.5-38.95 45.92"/>
+    <path transform="matrix(1.043 0 0 1.043 -77.1 -5.928)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="7.979" d="m1821 109.1 0.07 20.06"/>
+  </g>
+  <g id="line" transform="matrix(1.087 0 0 1.087 -3.13 -3.172)">
+    <circle cx="36" cy="36.04" r="25.76" fill="none" stroke="#000" stroke-linejoin="round" stroke-width="1.84"/>
+  </g>
 </svg>

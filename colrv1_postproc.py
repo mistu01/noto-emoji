@@ -190,6 +190,9 @@ def _add_fallback_subs_for_unknown_flags(colr_font):
     the latter is removed from the cmap table after the GSUB has been updated.
     """
     cmap = _Cmap(colr_font)
+    if UNKNOWN_FLAG_PUA not in cmap:
+        print("Skipping unknown-flag fallback: missing U+FE82B glyph in COLRv1 font")
+        return
     unknown_flag = cmap[UNKNOWN_FLAG_PUA]
     black_flag = cmap[BLACK_FLAG]
     cancel_tag = cmap[CANCEL_TAG]

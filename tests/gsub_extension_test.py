@@ -61,3 +61,22 @@ def test_map_pua_handles_extension_ligatures(monkeypatch):
     )
     glyph_name = map_pua_emoji.get_glyph_name_from_gsub([ord("1"), 0x20E3], font)
     assert glyph_name == "glyph_keycap"
+
+
+def test_map_pua_handles_keycap_variation_selector(monkeypatch):
+    map_pua_emoji = _load_module("map_pua_emoji_vs", MAP_PUA_EMOJI_PATH)
+    font = _fake_font(
+        _extension_ligature_subtable(
+            "glyph_one",
+            "glyph_keycap",
+            ["glyph_variation_selector", "glyph_combining_keycap"],
+        )
+    )
+    cmap = {
+        ord("1"): "glyph_one",
+        0xFE0F: "glyph_variation_selector",
+        0x20E3: "glyph_combining_keycap",
+    }
+    monkeypatch.setattr(map_pua_emoji.font_data, "get_cmap", lambda _: cmap)
+    map_pua_emoji.add_pua_cmap_to_font(font)
+    assert cmap[0xFE82E] == "glyph_keycap"

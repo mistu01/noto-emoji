@@ -1,0 +1,117 @@
+name: Build COLRv1 Font and Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      emoji_src_dir:
+        description: "PNG source directory used to build the CBDT metadata font"
+        required: true
+        default: "png/128"
+        type: string
+      release_tag:
+        description: "Optional release tag; defaults to colrv1-auto-<run>-<attempt>"
+        required: false
+        type: string
+      prerelease:
+        description: "Mark the GitHub release as a prerelease"
+        required: true
+        default: true
+        type: boolean
+
+concurrency:
+  group: release-colrv1-fonts-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build_release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            build-essential \
+            pkg-config \
+            libcairo2-dev \
+            libharfbuzz-bin \
+            imagemagick \
+            pngquant \
+            zopfli
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt
+
+      - name: Validate PNG source assets
+        run: python size_check.py --png-dir "${{ inputs.emoji_src_dir }}" --skip-svg
+
+      - name: Build COLRv1 fonts
+        env:
+          EMOJI_SRC_DIR: ${{ inputs.emoji_src_dir }}
+          BUILD_CBDT_DEPENDENCY: "1"
+        run: bash ./build_colrv1.sh
+
+      - name: Inspect built fonts
+        shell: bash
+        run: |
+          du -sh build/colrv1 || true
+          ls -lh fonts/Noto-COLRv1.ttf fonts/Noto-COLRv1-noflags.ttf
+          python - <<'PY'
+          from fontTools.ttLib import TTFont
+          for path in ("fonts/Noto-COLRv1.ttf", "fonts/Noto-COLRv1-noflags.ttf"):
+              font = TTFont(path)
+              assert "COLR" in font and font["COLR"].version == 1, path
+              print(path, "COLRv1", f"fontRevision={font['head'].fontRevision:.3f}")
+          PY
+
+      - name: Upload workflow artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: noto-color-emoji-colrv1-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            fonts/Noto-COLRv1.ttf
+            fonts/Noto-COLRv1-noflags.ttf
+            fonts/LICENSE
+          if-no-files-found: error
+
+      - name: Compute release metadata
+        id: meta
+        shell: bash
+        env:
+          RELEASE_TAG: ${{ inputs.release_tag }}
+          PRERELEASE: ${{ inputs.prerelease }}
+        run: |
+          if [[ -n "${RELEASE_TAG}" ]]; then
+            echo "tag=${RELEASE_TAG}" >> "${GITHUB_OUTPUT}"
+            echo "name=COLRv1 font ${RELEASE_TAG}" >> "${GITHUB_OUTPUT}"
+          elif [[ "${GITHUB_REF_TYPE}" == "tag" ]]; then
+            echo "tag=${GITHUB_REF_NAME}" >> "${GITHUB_OUTPUT}"
+            echo "name=COLRv1 font ${GITHUB_REF_NAME}" >> "${GITHUB_OUTPUT}"
+          else
+            echo "tag=colrv1-auto-${GITHUB_RUN_NUMBER}-${GITHUB_RUN_ATTEMPT}" >> "${GITHUB_OUTPUT}"
+            echo "name=COLRv1 font auto build ${GITHUB_RUN_NUMBER}.${GITHUB_RUN_ATTEMPT}" >> "${GITHUB_OUTPUT}"
+          fi
+          echo "prerelease=${PRERELEASE}" >> "${GITHUB_OUTPUT}"
+
+      - name: Create GitHub release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.meta.outputs.tag }}
+          name: ${{ steps.meta.outputs.name }}
+          files: |
+            fonts/Noto-COLRv1.ttf
+            fonts/Noto-COLRv1-noflags.ttf
+            fonts/LICENSE
+          prerelease: ${{ steps.meta.outputs.prerelease }}
+          generate_release_notes: true

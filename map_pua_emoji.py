@@ -65,9 +65,14 @@ def add_pua_cmap_to_font(font):
         add_emoji_gsub.EMOJI_KEYCAPS.items(), add_emoji_gsub.EMOJI_FLAGS.items()
     ):
         if pua not in cmap:
-            glyph_name = get_glyph_name_from_gsub([ch1, ch2], font)
-            if glyph_name is not None:
-                cmap[pua] = glyph_name
+            sequences = ([ch1, ch2],)
+            if ch2 == add_emoji_gsub.KEYCAP:
+                sequences += ([ch1, 0xFE0F, ch2],)
+            for sequence in sequences:
+                glyph_name = get_glyph_name_from_gsub(sequence, font)
+                if glyph_name is not None:
+                    cmap[pua] = glyph_name
+                    break
 
 
 def add_pua_cmap(source_file, target_file):

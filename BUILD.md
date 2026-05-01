@@ -48,4 +48,16 @@ before compositing.
 ```bash
 # Build only the CBDT font from png/128 Apple PNG assets
 $ ./full_rebuild.sh
+
+# Build COLRv1 fonts from svg/ assets. This also builds the CBDT font first
+# because COLRv1 post-processing copies metadata from fonts/NotoColorEmoji.ttf.
+$ ./build_colrv1.sh
 ```
+
+## GitHub release workflows
+
+Font release workflows are manual-only:
+
+* `Build PNG-128 Font and Release` builds `fonts/NotoColorEmoji.ttf`.
+* `Build COLRv1 Font and Release` builds `fonts/Noto-COLRv1.ttf` and
+  `fonts/Noto-COLRv1-noflags.ttf`.
