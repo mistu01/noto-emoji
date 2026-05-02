@@ -1,1 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36"><path fill="#CCD6DD" d="M31 2H5C3.343 2 2 3.343 2 5v26c0 1.657 1.343 3 3 3h26c1.657 0 3-1.343 3-3V5c0-1.657-1.343-3-3-3z"/><path fill="#E1E8ED" d="M31 1H5C2.791 1 1 2.791 1 5v26c0 2.209 1.791 4 4 4h26c2.209 0 4-1.791 4-4V5c0-2.209-1.791-4-4-4zm0 2c1.103 0 2 .897 2 2v4h-6V3h4zm-4 16h6v6h-6v-6zm0-2v-6h6v6h-6zM25 3v6h-6V3h6zm-6 8h6v6h-6v-6zm0 8h6v6h-6v-6zM17 3v6h-6V3h6zm-6 8h6v6h-6v-6zm0 8h6v6h-6v-6zM3 5c0-1.103.897-2 2-2h4v6H3V5zm0 6h6v6H3v-6zm0 8h6v6H3v-6zm2 14c-1.103 0-2-.897-2-2v-4h6v6H5zm6 0v-6h6v6h-6zm8 0v-6h6v6h-6zm12 0h-4v-6h6v4c0 1.103-.897 2-2 2z"/><path fill="#3B94D9" d="M31.002 33c-.721 0-1.416-.39-1.774-1.072l-9.738-18.59-6.076 6.076c-.446.447-1.076.66-1.705.564-.626-.092-1.171-.474-1.47-1.03l-7-13c-.524-.973-.16-2.186.813-2.709.975-.523 2.186-.16 2.709.812l5.726 10.633 6.1-6.099c.45-.45 1.089-.659 1.716-.563.629.096 1.175.485 1.47 1.049l11 21c.513.979.135 2.187-.844 2.699-.297.157-.614.23-.927.23z"/></svg>
+<svg id="emoji" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+  <g id="color">
+    <path fill="#fff" d="m12.05 59.91h47.9v-47.9h-47.9z"/>
+    <path fill="#92d3f5" stroke="none" d="M31.2379,28.4166l-6.8898-8.6812l-2.8384,2.5491l8.7131,11.7972l6.5938-3.5617 c0.1425-0.0713,11.2762,21.2218,11.2762,21.2218l3.397-1.4527L39.0546,25.2048C39.0546,25.2048,31.5269,28.8004,31.2379,28.4166z"/>
+  </g>
+  <g id="hair"/>
+  <g id="skin"/>
+  <g id="skin-shadow"/>
+  <g id="line">
+    <polygon fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" points="47.9061,52.0658 37.261,30.5927 29.9089,34.2373 21.1514,22.14 24.3481,19.7354 31.358,29.0544 35.4843,27.0088 35.4708,26.9815 39.0546,25.2048 51.4898,50.2891"/>
+    <rect x="12.0515" y="12.0154" width="47.897" height="47.8969" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+    <line x1="51.8392" x2="59.8051" y1="36.085" y2="36.085" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+    <line x1="12.739" x2="26.0395" y1="36.085" y2="36.085" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+    <line x1="55.2074" x2="59.6829" y1="47.9928" y2="47.9928" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+    <line x1="12.739" x2="41.3609" y1="47.9928" y2="47.9928" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+    <line x1="48.2339" x2="48.2509" y1="56.0805" y2="59.3704" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+    <line x1="48.033" x2="48.1527" y1="12.0588" y2="34.5045" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+    <line x1="36.1837" x2="36.1837" y1="38.1825" y2="59.5732" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+    <line x1="36.1837" x2="36.1837" y1="12.3297" y2="22.2845" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+    <line x1="24.2253" x2="24.2253" y1="33.3016" y2="59.5732" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+    <line x1="24.2253" x2="24.2253" y1="12.1204" y2="15.6523" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+    <line x1="43.2552" x2="59.2261" y1="24.1772" y2="24.1772" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+    <line x1="12.2635" x2="17.5519" y1="24.1772" y2="24.1772" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+  </g>
+</svg>

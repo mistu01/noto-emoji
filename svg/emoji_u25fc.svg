@@ -1,1 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36"><path fill="#31373D" d="M33 30c0 1.657-1.343 3-3 3H6c-1.657 0-3-1.343-3-3V6c0-1.657 1.343-3 3-3h24c1.657 0 3 1.343 3 3v24z"/></svg>
+<svg id="emoji" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+  <g id="line-supplement">
+    <path id="mittleres schwarzes quadrat color 1" fill="#000" d="M55.9166 16.0417H16.0834V55.8749H55.9166V16.0417Z"/>
+  </g>
+  <g id="color">
+    <path id="mittleres schwarzes quadrat color 1_2" fill="#3F3F3F" d="M55.9166 16.0417H16.0834V55.8749H55.9166V16.0417Z"/>
+  </g>
+  <g id="line">
+    <path id="mittleres schwarzes quadrat line 1" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M55.9166 16.0417H16.0834V55.8749H55.9166V16.0417Z"/>
+  </g>
+</svg>

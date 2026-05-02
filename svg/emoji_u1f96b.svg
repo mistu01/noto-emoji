@@ -1,1 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36"><path fill="#99AAB5" d="M30 32.5c0 1.933-5.373 3.5-12 3.5S6 34.433 6 32.5c0-1.932 5.372-3.5 12-3.5 6.627 0 12 1.567 12 3.5z"/><path fill="#99AAB5" d="M6 31.5h24v1H6z"/><path fill="#E6E7E8" d="M30 31.5c0 1.933-5.373 3.5-12 3.5S6 33.433 6 31.5 11.372 28 18 28c6.627 0 12 1.567 12 3.5z"/><path fill="#5C913B" d="M29 31c0 1.656-4.926 3-11 3-6.075 0-11-1.343-11-3s4.924-3 11-3c6.075 0 11 1.343 11 3z"/><path fill="#5C913B" d="M7 8h22v23H7z"/><path fill="#A6D388" d="M29 23c0 1.932-4.926 3.5-11 3.5-6.075 0-11-1.567-11-3.5s4.924-3.5 11-3.5c6.074 0 11 1.567 11 3.5z"/><path fill="#A6D388" d="M7 10h22v13H7z"/><path fill="#5C913B" d="M29 14c0 1.932-4.926 3.5-11 3.5-6.075 0-10.999-1.567-10.999-3.5S11.925 10.5 18 10.5c6.074 0 11 1.567 11 3.5z"/><path fill="#5C913B" d="M7 4h22v10H7z"/><path fill="#99AAB5" d="M30 4.5C30 6.433 24.627 8 18 8S6 6.433 6 4.5 11.373 1 18 1s12 1.567 12 3.5z"/><path fill="#99AAB5" d="M6 3.5h24v1H6z"/><path fill="#E6E7E8" d="M30 3.5C30 5.433 24.627 7 18 7S6 5.433 6 3.5 11.373 0 18 0s12 1.567 12 3.5z"/><path fill="#CCD6DD" d="M28.25 3.5C28.25 4.881 23.662 6 18 6S7.75 4.881 7.75 3.5 12.338 1 18 1s10.25 1.119 10.25 2.5z"/><path fill="#E6E7E8" d="M27.25 3.5c0 1.105-4.14 2-9.25 2s-9.25-.895-9.25-2 4.141-2 9.25-2c5.11 0 9.25.895 9.25 2z"/><path fill="#CCD6DD" d="M24 3.5c0 .69-2.686 1.25-6 1.25s-6-.56-6-1.25 2.686-1.25 6-1.25 6 .56 6 1.25z"/><ellipse fill="#E6E7E8" cx="18" cy="3.5" rx="4.75" ry=".75"/><path fill="#FFCC4D" d="M25 21c0 4.142-3.134 7.5-7 7.5s-7-3.358-7-7.5 3.134-7.5 7-7.5 7 3.358 7 7.5z"/><path fill="#FFAC33" d="M23 21c0 3.156-2.239 5.715-5 5.715s-5-2.56-5-5.715 2.238-5.714 5-5.714 5 2.558 5 5.714z"/></svg>
+<svg id="emoji" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+  <g id="color">
+    <rect x="19" y="49" width="34" height="11" fill="#d0cfce"/>
+    <rect x="19" y="21" width="34" height="28" fill="#fff"/>
+    <rect x="19" y="4" width="34" height="16.7953" fill="#d0cfce"/>
+    <ellipse cx="36" cy="36.6512" rx="8" ry="6.3488" fill="#ea5a47"/>
+    <ellipse cx="36" cy="30.623" rx="3" ry="1.8361" fill="#5c9e31"/>
+    <rect x="47" y="4" width="6.5" height="17" fill="#9b9b9a"/>
+    <rect x="47" y="49" width="6" height="11" fill="#9b9b9a"/>
+    <rect x="47" y="21" width="6" height="28" fill="#d0cfce"/>
+  </g>
+  <g id="line">
+    <g>
+      <path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M40.67,31.4908a6.311,6.311,0,0,1,3.3679,5.3886c0,3.6514-3.5924,6.596-8.0188,6.596S28,40.5308,28,36.8794a6.3159,6.3159,0,0,1,3.24-5.3"/>
+      <path fill="none" stroke="#000000" stroke-linejoin="round" stroke-width="2" d="M39.3868,30.46a2.38,2.38,0,0,1-.77,1.2368,4.6141,4.6141,0,0,1-5.4849,0,2.63,2.63,0,0,1-.77-1.2368,3.5288,3.5288,0,0,1-.1283-1.2367,3.9547,3.9547,0,0,1,1.54.1767,3.1031,3.1031,0,0,1,.8339.4122,3.4064,3.4064,0,0,1,1.1548-1.8551l.0962-.0883.0962.0883a3.2333,3.2333,0,0,1,1.1547,1.8551,4.4355,4.4355,0,0,1,.834-.4122,3.98,3.98,0,0,1,1.54-.1767A2.5244,2.5244,0,0,1,39.3868,30.46Z"/>
+    </g>
+    <line x1="23" x2="49" y1="5" y2="5" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <line x1="19" x2="53" y1="21" y2="21" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <line x1="19" x2="53" y1="49" y2="49" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <polyline fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="19.895 5 19 5 19 60 53 60 53 5 52.105 5"/>
+  </g>
+</svg>

@@ -1,1 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36"><path fill="#3B88C3" d="M0 32c0 2.209 1.791 4 4 4h28c2.209 0 4-1.791 4-4V4c0-2.209-1.791-4-4-4H4C1.791 0 0 1.791 0 4v28z"/><path fill="#FFF" d="M6 18L18 7v9.166L28 7v22l-10-9.167V29z"/></svg>
+<svg id="emoji" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+  <g id="color"/>
+  <g id="hair"/>
+  <g id="skin"/>
+  <g id="skin-shadow"/>
+  <g id="line">
+    <path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="M41,55l-18.7948-9.1111l-15.817-7.6675c-1.8509-0.8972-1.8509-3.5456,0-4.4428l15.817-7.6675L41,17"/>
+    <path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="M67,55l-18.8824-9.1111l-15.8908-7.6675c-1.8595-0.8972-1.8595-3.5456,0-4.4428l15.8908-7.6675L67,17"/>
+  </g>
+</svg>

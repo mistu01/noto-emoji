@@ -1,1 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36"><path fill="#4289C1" d="M33 19c1.187 0 2 .786 2 2 0 1.073-.983 2-2 2H22c-1.496 0-2-.813-2-2 0-.565.632-1.492 1-2l8-12h-7c-1.128 0-2-.843-2-2 0-1.073.929-2 2-2h11c1.639 0 2 1.012 2 2 0 .621-.635 1.519-1 2l-8 12h7zm-16 5c.633 0 1 .353 1 1 0 .573-.458 1-1 1h-6c-.798 0-1-.367-1-1 0-.301.337-.729.533-1L15 18h-4c-.602 0-1-.384-1-1 0-.573.428-1 1-1h6c.874 0 1 .473 1 1 0 .331-.338.877-.533 1.133L13 24h4zm-9 7c.633 0 1 .353 1 1 0 .573-.458 1-1 1H2c-.798 0-1-.367-1-1 0-.301.337-.729.533-1L6 25H2c-.602 0-1-.384-1-1 0-.572.428-1 1-1h6c.874 0 1 .473 1 1 0 .331-.338.877-.533 1.133L4 31h4z"/></svg>
+<svg id="emoji" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+  <g id="color"/>
+  <g id="hair"/>
+  <g id="skin"/>
+  <g id="skin-shadow"/>
+  <g id="line">
+    <polyline fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="6" points="49,8 62.1429,8 49,31 62.1429,31"/>
+    <polyline fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="6" points="28.1429,33.75 37,33.75 28.1429,49.25 37,49.25"/>
+    <polyline fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="4.6452" points="9.1429,52.5 16,52.5 9.1429,64.5 16,64.5"/>
+  </g>
+</svg>

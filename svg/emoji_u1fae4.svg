@@ -1,1 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" xml:space="preserve"><path fill="#FFCC4D" d="M36 18c0 9.941-8.059 18-18 18S0 27.941 0 18 8.059 0 18 0s18 8.059 18 18"/><ellipse fill="#65471B" cx="11.5" cy="15.5" rx="2.5" ry="3.5"/><ellipse fill="#65471B" cx="24.5" cy="15.5" rx="2.5" ry="3.5"/><path fill="#65471B" d="m11.209 27.978 14-3a1.001 1.001 0 0 0-.419-1.957l-14 3a1.001 1.001 0 0 0 .419 1.957z"/></svg>
+<svg id="emoji" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+  <g id="color">
+    <circle cx="36.341" cy="36.7559" r="22.9999" fill="#fcea2b"/>
+  </g>
+  <g id="line">
+    <circle cx="36.341" cy="36.7559" r="23" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path d="M30.341,31.7559a3,3,0,1,1-3-3,3.0011,3.0011,0,0,1,3,3"/>
+    <path d="M48.341,31.7559a3,3,0,1,1-3-3,3.001,3.001,0,0,1,3,3"/>
+    <path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M26,48c10-5,21-4.03,21-4.03"/>
+  </g>
+</svg>

@@ -1,1 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36"><path fill="#BF6952" d="M29 34c0 1.105-.895 2-2 2H9c-1.105 0-2-.895-2-2V2c0-1.105.895-2 2-2h18c1.105 0 2 .895 2 2v32z"/><circle fill="#FFAC33" cx="11" cy="18" r="1.5"/><path fill="#AC5640" d="M25 3c-.552 0-1 .448-1 1v9H11c-.552 0-1 .448-1 1s.448 1 1 1h14c.552 0 1-.448 1-1V4c0-.552-.448-1-1-1zm0 25c.552 0 1 .448 1 1v3c0 .552-.448 1-1 1H11c-.552 0-1-.448-1-1s.448-1 1-1h13v-2c0-.552.448-1 1-1z"/><path fill="#854836" d="M11 33c-.552 0-1-.448-1-1v-3c0-.552.448-1 1-1h14c.552 0 1 .448 1 1s-.448 1-1 1H12v2c0 .552-.448 1-1 1z"/><path fill="#AC5640" d="M25 21c.552 0 1 .448 1 1v3c0 .552-.448 1-1 1H11c-.552 0-1-.448-1-1s.448-1 1-1h13v-2c0-.552.448-1 1-1z"/><path fill="#854836" d="M11 26c-.552 0-1-.448-1-1v-3c0-.552.448-1 1-1h14c.552 0 1 .448 1 1s-.448 1-1 1H12v2c0 .552-.448 1-1 1zm0-11c-.552 0-1-.448-1-1V4c0-.552.448-1 1-1h14c.552 0 1 .448 1 1s-.448 1-1 1H12v9c0 .552-.448 1-1 1z"/></svg>
+<svg id="emoji" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+  <g id="color">
+    <rect x="18" y="9" width="36" height="54" fill="#A57939" stroke="none" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+    <rect x="24" y="14.0943" width="24" height="16.3019" fill="#6A462F" stroke="none" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+    <rect x="24" y="45.6792" width="24" height="11.2075" fill="#6A462F" stroke="none" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+  </g>
+  <g id="hair"/>
+  <g id="skin"/>
+  <g id="skin-shadow"/>
+  <g id="line">
+    <rect x="18" y="9" width="36" height="54" fill="none" stroke="#000000" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+    <ellipse cx="49" cy="36.5094" rx="2.5" ry="2.0377" fill="#000000" stroke="none"/>
+    <path fill="#000000" stroke="none" d="M49.5,41.6038h-1c-0.5523,0-1-0.4477-1-1v-6.1509c0-0.5523,0.4477-1,1-1h1c0.5523,0,1,0.4477,1,1v6.1509 C50.5,41.1561,50.0523,41.6038,49.5,41.6038z"/>
+    <rect x="24" y="14.0943" width="24" height="16.3019" fill="none" stroke="#000000" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+    <rect x="24" y="45.6792" width="24" height="11.2075" fill="none" stroke="#000000" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+  </g>
+</svg>

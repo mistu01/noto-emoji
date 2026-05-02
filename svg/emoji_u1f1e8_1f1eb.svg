@@ -1,1 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36"><path fill="#003082" d="M32 5H4C1.791 5 0 6.791 0 9v2.5h36V9c0-2.209-1.791-4-4-4z"/><path fill="#EEE" d="M0 11.5h36V18H0z"/><path fill="#289728" d="M0 18h36v6.5H0z"/><path fill="#FFCE00" d="M0 24.5V27c0 2.209 1.791 4 4 4h28c2.209 0 4-1.791 4-4v-2.5H0z"/><path fill="#D21034" d="M15 5h6v26h-6z"/><path fill="#FFCE00" d="M6.878 7.612l-.68-2.094-.681 2.094H3.316l1.781 1.294L4.417 11l1.781-1.294L7.979 11l-.681-2.094L9.08 7.612z"/></svg>
+<svg id="emoji" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+  <g id="color">
+    <rect x="5" y="17" width="62" height="38" fill="#f1b31c"/>
+    <rect x="5" y="17" width="62" height="10" fill="#1e50a0"/>
+    <rect x="5" y="27" width="62" height="9" fill="#fff"/>
+    <rect x="5" y="36" width="62" height="9" fill="#5c9e31"/>
+    <rect x="33" y="17" width="6" height="38" fill="#d22f27"/>
+    <polygon fill="#f1b31c" stroke="#f1b31c" stroke-linecap="round" stroke-linejoin="round" points="12.906 19.603 14.451 24.603 10.406 21.513 15.406 21.513 11.361 24.603 12.906 19.603"/>
+  </g>
+  <g id="line">
+    <rect x="5" y="17" width="62" height="38" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  </g>
+</svg>

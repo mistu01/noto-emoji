@@ -1,1 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36"><path fill="#22408B" d="M27.796 19L8 5v26h19.796L15.918 19z"/><path fill="#DD2F45" d="M25 18L9 7.196V30h16L13.574 18z"/><path fill="#FFF" d="M14.291 24.041l.586-.816-1 .098.1-1-.817.586-.414-.916-.414.916-.817-.586.099 1-1-.098.586.816-.916.414.916.414-.586.816 1-.098-.099 1 .817-.586.414.916.414-.916.817.586-.1-1 1 .098-.586-.816.916-.414zm-1.546-7.147l.001.002.001-.002.018.002c1.468 0 2.66-1.13 2.784-2.567-.348.648-.912 1.16-1.595 1.442l-.175-.244.611-.276-.611-.276.391-.545-.668.066.067-.668-.546.391-.276-.612-.276.612-.546-.391.067.668-.668-.066.391.545-.611.276.611.276-.167.233c-.67-.284-1.222-.792-1.566-1.431.121 1.429 1.303 2.554 2.763 2.565z"/></svg>
+<svg id="emoji" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+  <g id="line-supplement">
+    <polygon fill="#000" stroke="#000" stroke-linecap="round" stroke-linejoin="round" points="30 42.773 31.206 42 31.864 43.272 33.294 43.206 33.228 44.637 34.5 45.294 33.727 46.5 34.5 47.706 33.228 48.363 33.294 49.794 31.864 49.728 31.206 51 30 50.227 28.794 51 28.137 49.728 26.706 49.794 26.772 48.363 25.5 47.706 26.273 46.5 25.5 45.294 26.772 44.637 26.706 43.206 28.137 43.272 28.794 42 30 42.773"/>
+    <circle cx="30" cy="30" r="2" fill="#000" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
+    <path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M34,31c-.45,1-1.7187,2-4,2s-3.55-1-4-2"/>
+  </g>
+  <g id="color">
+    <polygon fill="#d22f27" stroke="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="50 55 22 55 22 17 50 37 33 37 50 55"/>
+    <polygon fill="#fff" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" points="30 42.773 31.206 42 31.864 43.272 33.294 43.206 33.228 44.637 34.5 45.294 33.727 46.5 34.5 47.706 33.228 48.363 33.294 49.794 31.864 49.728 31.206 51 30 50.227 28.794 51 28.137 49.728 26.706 49.794 26.772 48.363 25.5 47.706 26.273 46.5 25.5 45.294 26.772 44.637 26.706 43.206 28.137 43.272 28.794 42 30 42.773"/>
+    <circle cx="30" cy="30" r="2" fill="#fff" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"/>
+    <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M34,31c-.45,1-1.7187,2-4,2s-3.55-1-4-2"/>
+  </g>
+  <g id="line">
+    <polygon fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="50 55 22 55 22 17 50 37 33 37 50 55"/>
+  </g>
+  <g id="color-foreground">
+    <polygon fill="none" stroke="#1e50a0" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="50 55 22 55 22 17 50 37 33 37 50 55"/>
+  </g>
+</svg>

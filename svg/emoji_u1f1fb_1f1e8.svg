@@ -1,1 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36"><path fill="#009E60" d="M32 5h-5v26h5c2.209 0 4-1.791 4-4V9c0-2.209-1.791-4-4-4z"/><path fill="#0072C6" d="M4 5C1.791 5 0 6.791 0 9v18c0 2.209 1.791 4 4 4h5V5H4z"/><path fill="#FCD116" d="M9 5h18v26H9z"/><path d="M15.833 23.526L18 27.859l2.167-4.333L18 19.193l-2.167 4.333zm-2.708-5.417l2.167 4.333 2.167-4.333-2.167-4.333-2.167 4.333zm5.417 0l2.167 4.333 2.167-4.333-2.167-4.333-2.167 4.333z" fill="#009E60"/></svg>
+<svg id="emoji" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+  <g id="color">
+    <rect x="5" y="17" width="62" height="38" fill="#fcea2b"/>
+    <rect x="5" y="17" width="21" height="38" fill="#1e50a0"/>
+    <rect x="46" y="17" width="21" height="38" fill="#5c9e31"/>
+    <g>
+      <polygon fill="#5c9e31" points="39.182 41 36 46 32.818 41 36 36 39.182 41"/>
+      <polygon fill="#5c9e31" points="43 35 39.818 40 36.636 35 39.818 30 43 35"/>
+      <polygon fill="#5c9e31" points="35.364 35 32.182 40 29 35 32.182 30 35.364 35"/>
+    </g>
+  </g>
+  <g id="line">
+    <rect x="5" y="17" width="62" height="38" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  </g>
+</svg>

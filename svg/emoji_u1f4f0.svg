@@ -1,1 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36"><path fill="#99AAB5" d="M33 36H4c4 0 3-9 3-9 0-2.209 1.791-15 4-15h21s4 0 4 4v17s0 3-3 3z"/><path fill="#CCD6DD" d="M30 33c0 3 3 3 3 3H3s-3 0-3-4V4c0-2.209 1.791-4 4-4h22c2.209 0 4 1.791 4 4v29z"/><path fill="#99AAB5" d="M27 20c0 .553-.447 1-1 1h-8c-.552 0-1-.447-1-1 0-.553.448-1 1-1h8c.553 0 1 .447 1 1zm0-4c0 .553-.447 1-1 1h-8c-.552 0-1-.447-1-1 0-.553.448-1 1-1h8c.553 0 1 .447 1 1zm0-4c0 .553-.447 1-1 1h-8c-.552 0-1-.447-1-1 0-.553.448-1 1-1h8c.553 0 1 .447 1 1zm0 12c0 .553-.447 1-1 1H4c-.552 0-1-.447-1-1 0-.553.448-1 1-1h22c.553 0 1 .447 1 1zm0 4c0 .553-.447 1-1 1H4c-.552 0-1-.447-1-1 0-.553.448-1 1-1h22c.553 0 1 .447 1 1zm0 4c0 .553-.447 1-1 1H4c-.552 0-1-.447-1-1 0-.553.448-1 1-1h22c.553 0 1 .447 1 1zM25 9s2 0 2-2V5s0-2-2-2H5S3 3 3 5v2s0 2 2 2h20z"/><path fill="#55ACEE" d="M13 21s2 0 2-2v-6s0-2-2-2H5s-2 0-2 2v6s0 2 2 2h8z"/></svg>
+<svg id="emoji" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+  <g id="color">
+    <path fill="#9B9B9A" stroke="none" d="M58.9041,56h2.4417C63.0344,56,64,54.9933,64,53.3365v-0.3782v-42H13.0408v13.2772"/>
+    <path fill="#9B9B9A" stroke="none" d="M59,56h2.3957C63.0526,56,64,54.9933,64,53.3365v-0.3782v-42H14v16.1541"/>
+    <path fill="#9B9B9A" stroke="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="M59,56h2.3957C63.0526,56,64,54.9933,64,53.3365v-0.3782v-42H14"/>
+    <rect x="9" y="16" width="50" height="40" fill="#D0CFCE" stroke="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+  </g>
+  <g id="hair"/>
+  <g id="skin"/>
+  <g id="skin-shadow"/>
+  <g id="line">
+    <path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="M59,56h2.3957C63.0526,56,64,54.9933,64,53.3365v-0.3782v-42H14"/>
+    <rect x="9" y="16" width="50" height="40" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+    <rect x="14" y="27.1124" width="20.0043" height="20.0043" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+    <line x1="14" x2="54" y1="21.9988" y2="21.9988" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+    <line x1="39.5684" x2="54" y1="28.1124" y2="28.1124" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+    <line x1="39.5684" x2="54" y1="34.4792" y2="34.4792" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+    <line x1="39.5684" x2="54" y1="40.8459" y2="40.8459" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+    <line x1="39.5684" x2="54" y1="47.2126" y2="47.2126" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+  </g>
+</svg>

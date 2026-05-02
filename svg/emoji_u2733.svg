@@ -1,1 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36"><path fill="#77B255" d="M36 32c0 2.209-1.791 4-4 4H4c-2.209 0-4-1.791-4-4V4c0-2.209 1.791-4 4-4h28c2.209 0 4 1.791 4 4v28z"/><path fill="#FFF" d="M31.999 16h-9.171l6.899-6.899c.781-.781.782-2.047.001-2.828-.782-.782-2.048-.781-2.829 0L20 13.172V4c0-1.104-.896-2-2-2s-2 .896-2 2v9.171L9.101 6.272c-.781-.781-2.048-.781-2.828 0-.781.781-.781 2.047 0 2.828l6.9 6.9H4c-1.104 0-2.001.896-2 2 0 1.104.896 2 1.999 2h9.174l-6.9 6.9c-.781.78-.781 2.047 0 2.828.78.78 2.047.78 2.827 0l6.9-6.9V32c0 1.104.896 2 2 2s2-.896 2-2v-9.172l6.899 6.899c.781.781 2.047.782 2.828.001.781-.781.781-2.048 0-2.829L22.828 20h9.171C33.104 20 34 19.105 34 18.001 34 16.896 33.104 16 31.999 16z"/></svg>
+<svg id="emoji" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+  <g id="line-supplement">
+    <line x1="36" x2="36" y1="20.9811" y2="51.0189" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+    <line x1="51.0189" x2="20.9811" y1="36" y2="36" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+    <line x1="46.62" x2="25.38" y1="25.38" y2="46.62" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+    <line x1="46.62" x2="25.38" y1="46.62" y2="25.38" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+  </g>
+  <g id="color">
+    <path fill="#5c9e31" d="M60,60.9583H12a.9448.9448,0,0,1-1-1v-48a.9448.9448,0,0,1,1-1H60a.9448.9448,0,0,1,1,1v48A.9448.9448,0,0,1,60,60.9583Z"/>
+    <line x1="36" x2="36" y1="20.9394" y2="50.9772" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+    <line x1="51.0189" x2="20.9811" y1="35.9583" y2="35.9583" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+    <line x1="46.62" x2="25.38" y1="25.3383" y2="46.5783" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+    <line x1="46.62" x2="25.38" y1="46.5783" y2="25.3383" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+  </g>
+  <g id="line">
+    <path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M60,61H12a.9448.9448,0,0,1-1-1V12a.9448.9448,0,0,1,1-1H60a.9448.9448,0,0,1,1,1V60A.9448.9448,0,0,1,60,61Z"/>
+  </g>
+</svg>

@@ -1,1 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36"><path fill="#FFCC4D" d="M36 18c0 9.941-8.059 18-18 18-9.94 0-18-8.059-18-18C0 8.06 8.06 0 18 0c9.941 0 18 8.06 18 18"/><ellipse fill="#664500" cx="12" cy="13.5" rx="2.5" ry="3.5"/><ellipse fill="#664500" cx="24" cy="13.5" rx="2.5" ry="3.5"/><path fill="#FFF" d="M25 21c2.209 0 4 1.791 4 4s-1.791 4-4 4H11c-2.209 0-4-1.791-4-4s1.791-4 4-4h14z"/><path fill="#664500" d="M25 20H11c-2.757 0-5 2.243-5 5s2.243 5 5 5h14c2.757 0 5-2.243 5-5s-2.243-5-5-5zm0 2c1.483 0 2.71 1.084 2.949 2.5H24.5V22h.5zm-1.5 0v2.5h-3V22h3zm-4 0v2.5h-3V22h3zm-4 0v2.5h-3V22h3zM11 22h.5v2.5H8.051C8.29 23.084 9.517 22 11 22zm0 6c-1.483 0-2.71-1.084-2.949-2.5H11.5V28H11zm1.5 0v-2.5h3V28h-3zm4 0v-2.5h3V28h-3zm4 0v-2.5h3V28h-3zm4.5 0h-.5v-2.5h3.449C27.71 26.916 26.483 28 25 28z"/></svg>
+<svg id="emoji" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+  <g id="color">
+    <path fill="#FCEA2B" d="M36,13c-12.7025,0-23,10.2975-23,23s10.2975,23,23,23s23-10.2975,23-23 C58.9857,23.3034,48.6966,13.0143,36,13z"/>
+    <path fill="#FFFFFF" d="M44.5,49.2708h-17c-2.2064-0.0065-3.9935-1.7936-4-4l0,0c0.0065-2.2064,1.7936-3.9935,4-4h17 c2.2064,0.0065,3.9935,1.7936,4,4l0,0C48.4935,47.4772,46.7064,49.2643,44.5,49.2708z"/>
+  </g>
+  <g id="line">
+    <line x1="28" x2="28" y1="41.7708" y2="48.7708" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <line x1="33" x2="33" y1="41.7708" y2="48.7708" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <line x1="38" x2="38" y1="41.7708" y2="48.7708" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <line x1="43" x2="43" y1="41.7708" y2="48.7708" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <circle cx="36" cy="36" r="23" fill="none" stroke="#000000" stroke-miterlimit="10" stroke-width="2"/>
+    <path fill="none" stroke="#000000" stroke-miterlimit="2" stroke-width="2" d="M44.5,49.2708h-17c-2.2064-0.0065-3.9935-1.7936-4-4 l0,0c0.0065-2.2064,1.7936-3.9935,4-4h17c2.2064,0.0065,3.9935,1.7936,4,4l0,0C48.4935,47.4772,46.7064,49.2643,44.5,49.2708z"/>
+    <path d="M30,31c0,1.6568-1.3448,3-3,3c-1.6553,0-3-1.3433-3-3c0-1.6552,1.3447-3,3-3C28.6552,28,30,29.3448,30,31"/>
+    <path d="M48,31c0,1.6568-1.3447,3-3,3s-3-1.3433-3-3c0-1.6552,1.3447-3,3-3S48,29.3448,48,31"/>
+  </g>
+</svg>

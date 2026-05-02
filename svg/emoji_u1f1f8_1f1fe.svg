@@ -1,1 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36"><path fill="#eee" d="M0 13.666h36v8.666H0Z"/><path fill="#007a3d" d="M32 5H4C1.791 5 0 6.94 0 9.333v4.333h36V9.333C36 6.94 34.209 5 32 5"/><path fill="#141414" d="M32 30.999H4c-2.209 0-4-1.94-4-4.333v-4.333h36v4.333c0 2.393-1.791 4.333-4 4.333z"/><path fill="#ce1126" d="m24.977 18.48-.633 1.945L26 19.223l1.656 1.202-.633-1.946 1.656-1.2h-2.047L26 15.332l-.632 1.945h-2.047zm-8 0-.633 1.945L18 19.223l1.656 1.202-.633-1.946 1.656-1.2h-2.047L18 15.332l-.632 1.945h-2.047zm-8 0-.633 1.945L10 19.223l1.656 1.202-.633-1.946 1.656-1.2h-2.047L10 15.332l-.632 1.945H7.321Z"/></svg>
+<svg id="emoji" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+  <g id="color">
+    <rect x="5" y="17" width="62" height="38"/>
+    <rect x="5" y="17" width="62" height="13" fill="#5c9e31" stroke="#5c9e31" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="5" y="30" width="62" height="12" fill="#fff"/>
+    <polygon fill="#d22f27" stroke="#d22f27" stroke-linecap="round" stroke-linejoin="round" points="21 33.09 22.8539 39.09 18 35.382 24 35.382 19.1461 39.09 21 33.09"/>
+    <polygon fill="#d22f27" stroke="#d22f27" stroke-linecap="round" stroke-linejoin="round" points="36 33.09 37.8539 39.09 33 35.382 39 35.382 34.1461 39.09 36 33.09"/>
+    <polygon fill="#d22f27" stroke="#d22f27" stroke-linecap="round" stroke-linejoin="round" points="51 33.09 52.8539 39.09 48 35.382 54 35.382 49.1461 39.09 51 33.09"/>
+  </g>
+  <g id="line">
+    <rect x="5" y="17" width="62" height="38" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  </g>
+</svg>
