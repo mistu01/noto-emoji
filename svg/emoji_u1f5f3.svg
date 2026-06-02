@@ -1,15 +1,1 @@
-<svg id="emoji" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
-  <g id="color">
-    <path fill="#d0cfce" stroke="#d0cfce" stroke-linejoin="round" stroke-width="2" d="m10.14,62.8l.25-31.7h51.23l-.5,31.45-50.98.25Z"/>
-    <rect x="22.17" y="36.99" width="27.87" height="3.752" fill="#d0cfce"/>
-    <path fill="#fff" d="m24.1,31.34l16.17,5.836,9.927-22.72-16.38-6.695-9.717,23.579Z"/>
-    <path fill="#9b9b9a" stroke="#9b9b9a" stroke-linejoin="round" stroke-width="2" d="m34.3228,62.682l27.5472-.1321-.0246-25.5906-27.5226,25.7226Z"/>
-    <path fill="none" stroke="#9b9b9a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m21.97,38.89h28.18"/>
-  </g>
-  <g id="line">
-    <polyline fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.0001" points="43.7058 31.0959 61.856 31.0959 61.856 61.0377"/>
-    <path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.0001" d="m10.134,61.0377v-29.9418h13.5345"/>
-    <polyline fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.0001" points="37.2631 36.8415 23.7767 31.3123 33.7653 6.9477 50.4851 13.7991 41.1095 36.6612"/>
-    <line x1="21.91" x2="50.1" y1="36.92" y2="36.92" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36"><path fill="#8CCAF7" d="M34.5 24.995c0 2.209-1.791 2-4 2h-25c-2.209 0-4 .209-4-2L3.5 11c.293-1.75 1-2 2-2h25c1 0 1.791.208 2 2l2 13.995z"/><path fill="#292F33" d="M28.5 16.5c0 .829-.672 1.5-1.5 1.5H9c-.829 0-1.5-.671-1.5-1.5S8.172 15 9 15h18c.828 0 1.5.671 1.5 1.5z"/><path fill="#FFD983" d="M26.25 17.188v-14c0-1.105-.895-2-2-2h-13c-1.104 0-2 .895-2 2v14h17z"/><path fill="#5DADEC" d="M34.5 25c0-1.104-.896-2-2-2h-29c-1.104 0-2 .896-2 2v8c0 1.104.896 2 2 2h29c1.104 0 2-.896 2-2v-8z"/><path fill="#4289C1" d="M13.5 23v6c0 1.104.896 2 2 2h5c1.105 0 2-.896 2-2v-6h-9z"/><path fill="#5DADEC" d="M22.5 23v-1c0-1.104-.895-2-2-2h-5c-1.104 0-2 .896-2 2v1h9zm-3 4.5c0 .828-.672 1.5-1.5 1.5-.829 0-1.5-.672-1.5-1.5v-1c0-.828.671-1.5 1.5-1.5.828 0 1.5.672 1.5 1.5v1z"/><path d="M24 5c0 .276-.224.5-.5.5H16c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h7.5c.276 0 .5.224.5.5m0 4c0 .276-.224.5-.5.5H16c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h7.5c.276 0 .5.224.5.5m0 4c0 .276-.224.5-.5.5H16c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h7.5c.276 0 .5.224.5.5" fill="#C1694F"/><g fill="#C1694F"><circle cx="13" cy="5" r="1"/><circle cx="13" cy="9" r="1"/><circle cx="13" cy="13" r="1"/></g></svg>
