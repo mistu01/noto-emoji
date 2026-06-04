@@ -1,1 +1,32 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36"><path fill="#6AB2E7" d="M32 5H4c-1.016 0-1.94.382-2.646 1.006L17.5 18H36V9c0-2.209-1.791-4-4-4z"/><path fill="#12AD2B" d="M32 31H4c-1.016 0-1.94-.382-2.646-1.006L17.5 18H36v9c0 2.209-1.791 4-4 4z"/><path fill="#EEE" d="M1.383 29.973L17.5 18 1.354 6.006C.525 6.739 0 7.807 0 9v17.5c0 1.48.537 2.683 1.383 3.473z"/><path fill="#D7141A" d="M6.5 14.5l.826 2.543H10l-2.163 1.572.826 2.543L6.5 19.586l-2.163 1.572.826-2.543L3 17.043h2.674L6.5 14.5z"/></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" width="1200" height="1200">
+  <title>emoji_u1f1e9_1f1ef</title>
+  <path fill="#bde8c4" d="M0 1000H200V800H0Z"/>
+  <path fill="#d6eaf8" d="M0 500H200V300H0Z"/>
+  <path fill="#3dbc51" d="M0 900H100V1000H300V800H0Z"/>
+  <path fill="#85c0eb" d="M0 500H300V300H100V400H0Z"/>
+  <path fill="#ffffff" d="M0 900H200V700H300V800H600V500H300V400H0Z"/>
+  <path fill="#12ad2b" d="M100 900H200V1000H1100V600H500V700H300V800H100Z"/>
+  <path fill="#6ab2e7" d="M100 500H300V600H500V700H1100V300H200V400H100Z"/>
+  <path fill="#3eb089" d="M600 700H1100V600H600Z"/>
+  <path fill="#2cb642" d="M200 900H400V800H500V700H200Z"/>
+  <path fill="#7abaea" d="M200 600H500V500H400V400H200Z"/>
+  <path fill="#a5e0ae" d="M100 900H300V800H400V700H100Z"/>
+  <path fill="#c6e2f6" d="M100 500H200V600H400V500H300V400H100Z"/>
+  <path fill="#fbe7e8" d="M100 800H300V500H200V600H100Z"/>
+  <path fill="#fdfefd" d="M100 900H200V800H300V700H100Z"/>
+  <path fill="#fdfeff" d="M100 500H200V400H100ZM200 600H300V500H200Z"/>
+  <path fill="#fef8f8" d="M100 800H300V600H200V700H100Z"/>
+  <path fill="#1eb136" d="M400 800H600V700H700V600H500V700H400Z"/>
+  <path fill="#72b6e8" d="M400 600H500V700H700V600H600V500H400Z"/>
+  <path fill="#8cd799" d="M300 800H500V700H400V600H300ZM500 700H600V600H500Z"/>
+  <path fill="#b7daf3" d="M300 700H400V600H500V500H300ZM500 700H600V600H500Z"/>
+  <path fill="#e15054" d="M200 800H400V500H200Z"/>
+  <path fill="#f6fcf7" d="M200 800H400V600H300V700H200Z"/>
+  <path fill="#f9fcfe" d="M200 600H300V700H400V500H200Z"/>
+  <path fill="#fae3e3" d="M300 700H400V600H300ZM200 800H300V700H200Z"/>
+  <path fill="#fdf4f4" d="M200 600H300V500H200ZM300 700H400V600H300Z"/>
+  <path fill="#4bb591" d="M500 700H700V600H500Z"/>
+  <path fill="#ddf1ea" d="M500 700H600V600H500Z"/>
+  <path fill="#fdf2f2" d="M300 700H400V600H300Z"/>
+</svg>

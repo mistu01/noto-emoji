@@ -1,1 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36"><ellipse fill="#292F33" cx="18" cy="34.5" rx="4" ry="1.5"/><path fill="#99AAB5" d="M14.339 10.725S16.894 34.998 18.001 35c1.106.001 3.66-24.275 3.66-24.275h-7.322z"/><circle fill="#DD2E44" cx="18" cy="8" r="8"/></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" width="1200" height="1200">
+  <title>emoji_u1f4cd</title>
+  <path fill="#82aec0" d="M500 1100H600V1200H700V700H500Z"/>
+  <path fill="#2f7889" d="M400 700H500V800H700V700H800V600H400Z"/>
+  <path fill="#f44336" d="M300 600H400V700H800V600H900V200H800V100H400V200H300Z"/>
+  <path fill="#ff7555" d="M400 500H500V400H600V300H700V200H500V300H400Z"/>
+</svg>

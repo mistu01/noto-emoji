@@ -1,1 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36"><path fill="#292F33" d="M2.697 12.389c-.391.391-.391 1.023 0 1.414s1.023.391 1.414 0l9.192-9.192c.391-.391.391-1.023 0-1.414s-1.023-.391-1.414 0l-9.192 9.192z"/><path fill="#99AAB5" d="M36 32c0 4-4 4-4 4H4s-4 0-4-4V14s0-4 4-4h28c4 0 4 4 4 4v18z"/><path fill="#292F33" d="M15.561 3.061c-.391.391-1.023.391-1.414 0l-.707-.707c-.391-.391-.391-1.023 0-1.414s1.023-.391 1.414 0l.707.707c.39.39.39 1.023 0 1.414z"/><circle fill="#292F33" cx="27.5" cy="18.5" r="5.5"/><circle fill="#292F33" cx="27.5" cy="29.5" r="3.5"/><circle fill="#66757F" cx="27.5" cy="18.5" r="3.5"/><circle fill="#66757F" cx="27.5" cy="29.5" r="1.5"/><g fill="#292F33"><circle cx="10.5" cy="25.5" r="1.5"/><circle cx="5.5" cy="25.5" r="1.5"/><circle cx="10.5" cy="20.5" r="1.5"/><circle cx="15.5" cy="20.5" r="1.5"/><circle cx="15.5" cy="25.5" r="1.5"/><circle cx="15.5" cy="30.5" r="1.5"/><circle cx="5.5" cy="30.5" r="1.5"/><circle cx="5.5" cy="20.5" r="1.5"/><circle cx="10.5" cy="15.5" r="1.5"/><circle cx="15.5" cy="15.5" r="1.5"/><circle cx="5.5" cy="15.5" r="1.5"/><circle cx="10.5" cy="30.5" r="1.5"/></g></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" width="1200" height="1200">
+  <title>emoji_u1f4fb</title>
+  <path fill="#82aec0" d="M600 200H900V100H600ZM200 400H700V300H600V200H300V300H200Z"/>
+  <path fill="#ffab00" d="M0 1100H100V1200H1000V1100H1100V400H0Z"/>
+  <path fill="#de7340" d="M0 500H1100V400H1000V300H100V400H0ZM500 900H700V800H1000V600H500Z"/>
+  <path fill="#78909c" d="M500 1100H700V1000H500ZM800 1100H1000V1000H800Z"/>
+  <path fill="#fcebcd" d="M500 1100H600V1000H500ZM800 1100H900V1000H800Z"/>
+  <path fill="#546e7a" d="M100 700H400V600H100ZM100 900H400V800H100ZM100 1100H400V1000H100Z"/>
+  <path fill="#fff59d" d="M500 900H1000V700H600V800H500Z"/>
+  <path fill="#212121" d="M600 800H700V900H800V800H900V700H800V600H700V700H600Z"/>
+  <path fill="#d85e59" d="M700 900H800V600H700Z"/>
+</svg>

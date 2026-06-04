@@ -1,1 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36"><path fill="#BE1931" d="M12.908 30.75c-.276 2.209-2.291 3-4.5 3s-3.776-1.791-3.5-4l1-9c.276-2.209 2.291-4 4.5-4s6.468 0 3.5 4-1 10-1 10z"/><path fill="#CCD6DD" d="M35.825 14.75c0 6.902-1.544 12.5-3.45 12.5-1.905 0-20.45-5.598-20.45-12.5 0-6.903 18.545-12.5 20.45-12.5 1.906 0 3.45 5.597 3.45 12.5z"/><ellipse fill="#66757F" cx="32.375" cy="14.75" rx="3.45" ry="12.5"/><path fill="#DD2E44" d="M17.925 21.75l-14-1c-5 0-5-12 0-12l14-1c-3 3-3 11 0 14z"/><ellipse fill="#99AAB5" cx="31.325" cy="14.75" rx="1.5" ry="4.348"/></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" width="1200" height="1200">
+  <title>emoji_u1f4e2</title>
+  <path fill="#353738" d="M300 1000H400V900H500V800H600V700H300Z"/>
+  <path fill="#c62828" d="M100 1000H200V1100H400V800H500V700H100Z"/>
+  <path fill="#f44336" d="M0 700H100V800H500V600H400V500H500V300H100V400H0ZM100 1100H300V900H100Z"/>
+  <path fill="#bdbdbd" d="M300 700H400V800H700V900H900V500H600V600H300Z"/>
+  <path fill="#e0e0e0" d="M200 500H300V700H700V600H800V900H900V1000H1000V700H1100V400H1000V100H900V200H700V300H400V400H200Z"/>
+  <path fill="#ffffff" d="M700 500H800V200H700ZM200 500H600V400H200Z"/>
+  <path fill="#306976" d="M900 700H1000V400H900Z"/>
+  <path fill="#ff7555" d="M100 500H300V400H100Z"/>
+</svg>

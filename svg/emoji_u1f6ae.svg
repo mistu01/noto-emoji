@@ -1,1 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36"><path fill="#3B88C3" d="M0 4c0-4 4-4 4-4h28s4 0 4 4v28s0 4-4 4H4s-4 0-4-4V4z"/><ellipse fill="#FFF" cx="23" cy="7.5" rx="3" ry="3.5"/><path fill="#FFF" d="M29 13s0-2-2-2h-7c-1 0-2 1-2 1l-2 2h-4s-1 0-1 1 1 1 1 1h5l2-2v17s0 1 1 1h1s1 0 1-1v-8s0-1 1-1 1 1 1 1v8s0 1 1 1h1s1 0 1-1v-9s2 0 2-2v-7z"/><path fill="#FFF" d="M6 22s-1 0-1-1 1-1 1-1 2 0 2 2v8h6v-8c0-2 2-2 2-2s1 0 1 1-1 1-1 1v8s0 2-2 2H8s-2 0-2-2v-8z"/><circle fill="#FFF" cx="11" cy="20" r="2"/></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" width="1200" height="1200">
+  <title>emoji_u1f6ae</title>
+  <path fill="#194fa5" d="M0 1100H100V1200H1000V1100H1100V200H1000V100H900V1000H0Z"/>
+  <path fill="#2262dd" d="M0 1100H1000V100H100V200H0Z"/>
+  <path fill="#68abe6" d="M200 300H300V200H200ZM100 400H200V300H100Z"/>
+  <path fill="#ffffff" d="M400 600H600V700H700V1000H800V700H900V600H800V500H700V400H800V300H700V200H600V300H500V400H600V500H400ZM300 700H400V600H300ZM500 1000H600V700H500ZM200 900H300V800H200ZM300 1000H400V900H300Z"/>
+</svg>

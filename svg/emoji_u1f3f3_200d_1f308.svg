@@ -1,1 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" xml:space="preserve"><path fill="#880082" d="M0 27a4 4 0 0 0 4 4h28a4 4 0 0 0 4-4v-.5H0v.5z"/><path fill="#3558A0" d="M0 22.07h36v4.6H0z"/><path fill="#138F3E" d="M0 17.83h36v4.5H0z"/><path fill="#FAD220" d="M0 13.5h36V18H0z"/><path fill="#FF7300" d="M0 9.17h36v4.5H0z"/><path fill="#FF000E" d="M32 5H4a4 4 0 0 0-4 4v.33h36V9a4 4 0 0 0-4-4z"/></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" width="1200" height="1200">
+  <title>emoji_u1f3f3_200d_1f308</title>
+  <path fill="#6a1b90" d="M0 900H1100V700H0Z"/>
+  <path fill="#f50000" d="M0 500H1100V300H0Z"/>
+  <path fill="#1258a7" d="M0 800H1100V600H0Z"/>
+  <path fill="#f58900" d="M0 600H1100V400H0Z"/>
+  <path fill="#409843" d="M0 700H1100V500H0Z"/>
+  <path fill="#f5d700" d="M0 600H1100V500H0Z"/>
+</svg>

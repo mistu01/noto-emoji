@@ -1,1 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36"><path fill="#E6E7E8" d="M29 27c0 1.104-.896 2-2 2H9c-1.104 0-2-.896-2-2V9c0-1.104.896-2 2-2h18c1.104 0 2 .896 2 2v18z"/></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" width="1200" height="1200">
+  <title>emoji_u25fd</title>
+  <path fill="#bdbdbd" d="M300 900H900V300H700V700H300Z"/>
+  <path fill="#e0e0e0" d="M300 800H800V300H300Z"/>
+  <path fill="#ffffff" d="M500 500H600V400H500ZM400 600H500V500H400Z"/>
+</svg>
