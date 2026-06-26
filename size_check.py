@@ -8,7 +8,7 @@ import sys
 PNG_SIZE_OVERRIDES = {
     # Apple source artwork in png/128 is authored at 160x160 and scaled during
     # the build to fit the font's 128px body box.
-    "128": (160, 145),
+    "128": (160, 160),
 }
 
 
